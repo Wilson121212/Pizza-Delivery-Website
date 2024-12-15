@@ -1,0 +1,544 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #455835; 
+    padding: 10px 40px; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    height: 35px; 
+    color: white;
+    position: fixed;
+    width:99%;
+    z-index: 1000; 
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.nav-left a:focus, .nav-right a:focus{
+    color: rgb(240, 206, 110);
+}
+.logo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0px 0 50px;
+}
+h1 {
+    display: flex;
+    padding: 0 15px;
+    font-family: URW Chancery L, cursive;
+    font-size: 30px; 
+    color: rgb(240, 206, 110);
+}
+.logo-img{
+    padding: 0 70px 0 0;
+}
+
+/* Main Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Menu Section */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+    background-color: #f0ffee;
+}
+
+/*Category List*/
+.categories {
+    flex-basis: 25%;
+    background-color: #ffe8c0;
+    padding: 20px;
+    border-radius: 20px;
+    max-height: 500px;
+    max-width: 300px;
+}
+.categories h3 {
+    font-family: Marker Felt, fantasy;
+    font-size: 30px;
+    text-align:left;
+    padding-left: 30px;
+}
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+.categories li {
+    margin: 30px 30px;
+    display: flex; 
+    align-items: center; 
+}
+.categories li a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.categories li a:focus, .categories li a:hover{
+    color: rgb(105, 91, 53);
+}
+.categories li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; 
+}
+span {
+    font-family: Serif, Garamond;
+    font-size: 20px; 
+}
+
+/*Menu items start*/
+
+/*.menu-items {
+    flex-basis: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}*/
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+    justify-items: center; 
+    align-items: center; 
+    padding: 10px 20px;
+    margin: 0 20px; 
+}
+.menu-items a.item {
+    text-decoration: none; 
+    color: inherit; 
+}
+.menu-items a.item:hover {
+    background-color: #f0f0f0;
+}
+.item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.item h4 {
+    margin: 10px 0;
+    font-family: Didot, serif;
+    font-size: 25px;
+}
+.item p {
+    margin: 5px 0;
+}
+
+/*Personalized Pizza*/
+.personalized-pizza {
+    display: flex;
+    flex-direction: column; 
+    justify-items: flex-start;
+
+    max-width: 600px; 
+    padding: 20px; 
+    width:100%;
+    margin-right: 300px;
+    background-color: #f0ffee;
+}
+
+/*Individual Pizza*/
+
+#customizeForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    padding-right:50px;
+}
+
+#customizeForm label {
+    font-weight: bold;
+    margin-right: 5px;
+    width: 200px; 
+    text-align: right; 
+}
+
+#customizeForm select
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 130px;
+}
+
+#customizeForm input[type="number"] 
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 110px;
+}
+
+#customizeForm button.add-to-cart-button {
+    font-size: 1.1em;
+    background-color: #9eeca0;
+    color: #02542D;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 320px;
+    width:200px;
+}
+
+#customizeForm button.add-to-cart-button:hover {
+    background-color: #569e49;
+}
+
+/* Center alignment for both the image section and form */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding-right:400px;
+}
+
+.grey-box {
+    background-color: #f5f5f5; 
+    padding: 20px;
+    margin-right:230px;
+    padding-right: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.add-to-cart-button {
+    background-color: #455835;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*Personalized Pizza*/
+.form-group {
+    margin-bottom: 20px;
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 400px; 
+}
+.form-group > div {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.form-group label {
+    margin-bottom: 0; 
+}
+
+.form-group > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-container {
+    padding: 30px; 
+    border-radius: 10px;
+    background-color: #f2f2f2; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 12px; 
+    transform: scale(1.2); 
+}
+
+#personalizedQty {
+    margin-top: 10px;
+    width: 80px; 
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 1.1em; 
+ /* Bold key labels */
+    color: #333;
+}
+
+.form-group label[for="toppings"],
+.form-group label[for="size"],
+.form-group label[for="thickness"],
+.form-group label[for="sauce"],
+.form-group label[for="personalizedQty"],
+.form-group label[for="specialInstructions"] {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group select, .form-group input[type="number"], .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+    width: 30%;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #9eeca0;
+    color: #02542D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 140px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #569e49;
+}
+
+
+/*For all buttons*/
+button {
+    background-color: #4a5e38; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3a4e28; 
+}
+
+main {
+    padding-bottom: 60px;
+}
+
+/*About Us*/
+.timeline-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border: 2px solid #cc0000;
+}
+.timeline-container h2 {
+    text-align: center;
+    color: #cc0000;
+    margin-bottom: 20px;
+    display: flex;
+}
+.timeline {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.year:hover, .year.active {
+    background-color: #f5f5dc;
+    color: #cc0000;
+    transform: scale(1.05); 
+}
+.stories {
+    padding-left: 20px;
+    max-width: 100%; 
+}
+.story {
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    display: none;
+}
+.story.active {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem; 
+    line-height: 1.1; 
+}
+.story img {
+    width: 20%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    height: auto;
+    border-radius: 8px;
+}
+.story p {
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+.timeline-container {
+    border: 2px solid #cc0000;
+    padding: 20px;
+    background-color: #f9f9f9; 
+}
+
+.years .year {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: #cc0000;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline h2 {
+    text-align: center;
+    color: #cc0000;
+    font-size: 2rem;
+}
+
+.pizza-detail {
+    max-width: 350px; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.pizza-detail img {
+    width: 100%; 
+    height: auto; 
+}
+
+.pizza-detail h2 {
+    margin-top: 20px; 
+}
+
+.pizza-detail p {
+    font-size: 16px; 
+    color: #666; 
+    margin-top: 10px;
+}
+
+/*Feedback Page*/
+.feedback h2{
+    margin:20px;
+    font-family: Marker Felt, fantasy;
+    font-size: 40px; 
+}
+.Feedback {
+    margin: 20px; 
+    flex-grow: 1; 
+}
+/* Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4a5e38;
+    color: white;
+    align-items: center;
+    position: realtive;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+/*Individual Snacks and Drinks*/
+
+#customizeForm1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+    margin-left: 220px;
+}
+
+#customizeForm1 label {
+    font-weight: bold;
+    width: 80px; 
+    text-align: right; 
+}
+
+#customizeForm1 input[type="number"] 
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 110px;
+}
+
+#customizeForm1 button.add-to-cart-button {
+    font-size: 1.1em;
+    background-color: #9eeca0;
+    color: #02542D;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    width:150px;
+    margin-left: 35px;
+}
+
+#customizeForm1 button.add-to-cart-button:hover {
+    background-color: #569e49;
+}

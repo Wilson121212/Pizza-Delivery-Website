@@ -1,0 +1,233 @@
+/* Basic Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+
+    background-color: #455835; 
+    padding: 10px 40px; /*can change to 12px for vertical distance*/
+    height: 35px; 
+    color: white;
+    
+    width:99%;
+    z-index: 1000; /*for it to be in front all other items*/
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;/*change to 400*/
+    font-size: 1rem;
+}
+.nav-left a:focus, .nav-right a:focus,.nav-left a:hover, .nav-right a:hover{
+    color: rgb(240, 206, 110);
+}
+.logo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 50px;
+}
+h1 {
+    padding: 0 15px;
+    font-family: URW Chancery L, cursive;
+    font-size: 30px; 
+    color: rgb(240, 206, 110);
+}
+.logo-img{
+    padding: 0 70px 0 0;
+}
+
+/* Main Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Category */
+.nav-icons {
+    display: flex;
+    padding: 5px 50px 0px 35px; 
+    height: 70px;
+    justify-content: space-around;
+    background-color: rgb(252, 253, 246);
+    align-items: center;
+    position: relative;
+}
+
+.nav-icons img {
+    width: 50px;
+    height:50px;
+    margin: 0 50px;
+}
+h2{
+    font-family: Serif, Garamond;
+    display: flex;
+    margin-left: -30px;
+}
+.nav-icons a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-left: -50px;
+}
+.nav-icons a:focus, .nav-icons a:hover{
+    color: rgb(240, 206, 110);
+}
+/* Seasonal Promotion*/
+h3{
+    font-family: Marker Felt, fantasy;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:0;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3c972c;
+    margin-bottom: 50px;
+}
+.seasonal-promotion {
+    padding: 30px;
+    background-color: #e4efde;
+}
+table{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-color: #e4efde;
+    border-width: 0cap;
+}
+.left_table {
+    background-color: #569e49;
+    width: 700px;
+    height: auto;
+    border-right-width: 20px;
+    border-color: #e4efde;
+}
+.floatleft{
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: 20px 20px;
+	width: auto;
+}
+.floatleft2{
+    display: flex;
+    float: left;
+    align-items: flex-start;
+    margin:0;
+	width: auto;
+}
+.floatright{
+    margin-left: 10px;
+	color: black;
+    font-family: Serif, Garamond;
+    align-items: center;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 10px 0 20px;
+}
+.floatright2{
+    display: flex;
+    float:right;
+    align-items: flex-end;
+    margin: 15px 15px;
+}
+#Promo2words{
+    margin:80px 0 0 0;
+}
+button{
+  background-color: #9eeca0; 
+  border: 2px solid #ffffff;
+  color: #544c02;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+button:hover {
+    background-color: #73af75; 
+}
+
+.right_table1{
+    width: 600px;
+    background-color: rgb(235, 255, 235);
+    border: none;
+}
+.right_table2{
+    width: 600px;
+    background-color: rgb(255, 250, 227);
+    border: none;
+}
+
+
+/* Signature*/
+.signature {
+    padding: 30px;
+    background-color: #e7ebd0;
+    text-align: center;
+    padding-bottom: 100px;
+    font-family: Didot, serif;
+}
+h5{
+    font-family: Didot, serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.signature-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.signature-item {
+    background-color: white;
+    padding: 10px;  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 30%;
+}
+.signature-item img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* This ensures the image covers the area, cropping as necessary */
+}
+
+/* Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4a5e38;
+    color: white;
+    align-items: start;
+    padding: 10px 50px;
+    position: relative;
+    margin: 0;
+}
+
+

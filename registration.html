@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - PengYu's Pizza</title>
+    <style>
+        body {
+            background-color: #455835; 
+            color: black; 
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+        .login-box {
+            background: #e4efde;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px; 
+            text-align: center; 
+        }
+        h1 {
+            color: black; 
+            font-family: Serif, Garamond; 
+            margin-bottom: 20px; 
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #c0392b; 
+            color: white;
+            border: none;
+            padding: 8px; 
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px; 
+            margin-top: 10px; 
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #e74c3c;
+        }
+		.login {
+			margin-top: 20px; 
+			color: black; 
+			text-decoration: none;
+		}
+		.login:hover {
+			text-decoration: underline;
+		}
+        .note {
+            font-size: 12px;
+            color: #555;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <div class="login-box">
+        <h1>Registration Page</h1>
+        <form action="register.php" method="POST">
+            <label for="username">Username:</label><br />
+            <input type="text" name="username" required><br /><br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <div class="note">* Password must be 6-12 characters long and include at least one uppercase letter.</div><br />
+            <label for="password2">Password Confirmation:</label><br />
+            <input type="password" name="password2" required><br /><br />
+			<a href="LoginPage.php" class="login">Already a member? Log in here</a> <br />
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+        </form>
+    </div>
+</div>
+</body>
+</html>
